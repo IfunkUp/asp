@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -14,6 +15,7 @@ namespace contactweb.Models
         public string Email { get; set; }
         public string PhonePrimary { get; set; }
         public string phoneSecondary { get; set; }
+
         public DateTime Birthday { get; set; }
         public string StreetAdress1 { get; set; }
         public string StreetAdress2 { get; set; }
