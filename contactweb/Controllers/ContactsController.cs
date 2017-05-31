@@ -19,9 +19,7 @@ namespace contactweb.Controllers
         // GET: Contacts
         public ActionResult Index()
         {
-            var Userid = GetcurrentUserId();
-
-            return View(db.Contacts.Where(x => x.UserId == Userid).ToList());
+            return View(db.Contacts.ToList());
         }
 
         // GET: Contacts/Details/5
